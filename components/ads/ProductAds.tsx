@@ -23,10 +23,10 @@ const ProductBanner: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute top left-[20rem] w-1/2 ">
+    <div className="absolute top left-[20rem] w-1/2 hidden lg:block">
       <AnimatePresence mode="wait">
         <motion.div
-          key={banners[currentIndex].src} 
+          key={banners[currentIndex].src}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}

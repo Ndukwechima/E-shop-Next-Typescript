@@ -22,7 +22,7 @@ const BannerAds: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute top-[10rem] right-[-2rem] w-1/2 ">
+    <div className="absolute top-[10rem] right-[-2rem] w-1/2 hidden lg:block">
       <AnimatePresence mode="wait">
         <motion.div
           key={banners[currentIndex].src}
